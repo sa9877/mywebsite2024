@@ -1,3 +1,4 @@
+
 </html>
 <html>
 <head>
@@ -49,16 +50,28 @@ Other Sea Animals – Other animals found in seas are sponges, corals, sea pinea
 <h2>
 DID YOU KNOW? <H2/>
 </h2> <H3>
-Experts have estimated that about one million species live in the ocean, which would be roughly 90 percent of all living creatures. Of those one million species, about 95 percent are invertebrates, meaning things that don't have a backbone such as jellyfish and shrimp.One study of a deep-sea community revealed 898 species from more than 100 families and a dozen phyla in an area about half the size of a tennis court. More than half of these were new to science. Life began in the ocean 3.1 billion to 3.4 billion years ago.One study of a deep-sea community revealed 898 species from more than 100 families and a dozen phyla in an area about half the size of a tennis court. More than half of these were new to science. Life began in the ocean 3.1 billion to 3.4 billion years ago<H3/><!DOCTYPE html>
+Experts have estimated that about one million species live in the ocean, which would be roughly 90 percent of all living creatures. Of those one million species, about 95 percent are invertebrates, meaning things that don't have a backbone such as jellyfish and shrimp.One study of a deep-sea community revealed 898 species from more than 100 families and a dozen phyla in an area about half the size of a tennis court. More than half of these were new to science. Life began in the ocean 3.1 billion to 3.4 billion years ago.One study of a deep-sea community revealed 898 species from more than 100 families and a dozen phyla in an area about half the size of a tennis court. More than half of these were new to science. Life began in the ocean 3.1 billion to 3.4 billion years ago<H3/>
+
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button Example</title>
-</head>
-<body>
+    
+<button id="backToTopBtn" onclick="scrollToTop()">Back to Top</button>
 
-    <button>Click Me</button>
+    <script>
+        // Show the button when the user scrolls down 100px
+        window.onscroll = function() {
+            let button = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
 
+        // Function to scroll back to the top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
